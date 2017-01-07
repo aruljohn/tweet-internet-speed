@@ -6,7 +6,7 @@
 
 3. Click on the tab **Permissions** and set the access to **Read and Write**.
 
-4. Copy the script `internetspeed.py` to a directory of your choice.
+4. Copy the script `internetspeed.py` to a directory of your choice. Mine is copied to `/usr/local/bin/internetspeed.py`.
 
 5. Download the speedtest.net command line script [speedtest.py](https://github.com/sivel/speedtest-cli/blob/master/speedtest.py). Save it in a directory of your choice. I copied mine to `/usr/local/bin/speedtest.py`.
 
@@ -14,7 +14,7 @@
 
 6. Run the script:
 
-    `python speedtest.py`
+    `python /usr/local/bin/internetspeed.py`
 
 7. To set a cronjob to run this script and tweet your Internet speed every 3 hours, you can use this line:
 
