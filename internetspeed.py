@@ -8,6 +8,7 @@ import requests
 #
 
 def main():
+  script_path = '/usr/local/bin/speedtest.py'
   # Find IP address and remove the last 2 octets
   ip = None
   r = requests.get('https://api.aruljohn.com/ip')
@@ -17,7 +18,7 @@ def main():
       ip =  '.'.join(ip.split('.')[:2]) + '.xx.xx'
 
   # Get the Internet speed by calling speedtest-cli
-  speed = subprocess.check_output(["python", "/usr/local/bin/speedtest.py", "--simple"])
+  speed = subprocess.check_output(['python', script_path, '--simple'])
   speed = "My #InternetSpeed :\n" + speed
   if ip != None:
     speed += "IP address: " + ip
