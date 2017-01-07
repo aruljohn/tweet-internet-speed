@@ -12,11 +12,16 @@
 
 6. Edit `internetspeed.py` and replace the four values (**consumer_key**, **consumer_secret**, **access_token**, **access_token_secret**) with the values in the Twitter application you just created. Also, replace the **script_path** value with the full path to the `speedtest.py` script.
 
-6. Run the script:
+7. You may or may not have the Python modules `requests` and `tweepy'. Let's install them.
+
+    `pip install requests`
+    `pip install tweepy`
+
+7. Run the script:
 
     `python /usr/local/bin/internetspeed.py`
 
-7. To set a cronjob to run this script and tweet your Internet speed every 3 hours, you can use this line:
+8. To set a cronjob to run this script and tweet your Internet speed every 3 hours, you can use this line:
 
 ```
 # Run every 3 hours
